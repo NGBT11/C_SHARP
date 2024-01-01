@@ -4,11 +4,12 @@
 // 1. Напишите программу, которая на вход принимает два числа и проверяет,
 // является ли первое число квадратом второго.
 
-string a1 =  Console.ReadLine()!;
-string a2 =  Console.ReadLine()!;
-int b1 =   Convert.ToInt32(a1);
-int b2 =   Convert.ToInt32(a2);
-if (b1 * b1 == b2)
-    Console.WriteLine("Yes");
+Console.Write("Enter a number 1: ");
+int b1 = int.Parse(Console.ReadLine()!);
+Console.Write("Enter a number 2: ");
+int b2 = int.Parse(Console.ReadLine()!);
+
+if (b2 * b2 == b1)
+Console.WriteLine("Yes");
 else
-    Console.WriteLine("No");
+Console.WriteLine("No");
